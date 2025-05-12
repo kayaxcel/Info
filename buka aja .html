@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Kamu yang manis ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      color: #e91e63;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeInText 3s ease-in-out forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInText {
+      to { opacity: 1; }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hai cantik semangat yah ❤️</h1>
+    <p>
+      Aku cuma mau bilang…<br><br>
+      Aku suka kamu. Mungkin ini terdengar sederhana, tapi perasaanku nyata asek.<br><br>
+      Setiap kali kamu tersenyum, hariku jadi lebih cerah.<br>
+      Setiap kali kamu bicara, hatiku tenang.<br><br>
+      Aku harap kamu bisa merasakan hal yang sama. Tapi kalau belum, itu nggak masalah.<br>
+      Aku akan tetap menghargaimu dan semua yang kamu lakukan.<br><br>
+      Terima kasih sudah jadi kamu anjay 🌸
+    </p>
+  </div>
+
+  <!-- Musik latar romantis -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+</body>
+</html>
